@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Login | AchieveX</title>
+
+    <link rel="stylesheet" href="css/auth.css">
+</head>
+
+<body>
+
+    <div class="auth-container">
+
+        <div class="auth-card">
+
+            <div class="auth-header">
+
+                <div class="logo">
+                    🏆
+                </div>
+
+                <h1>AchieveX</h1>
+
+                <p>Administrator Login</p>
+
+            </div>
+
+
+            <form id="adminLoginForm">
+
+                <div class="form-group">
+
+                    <label for="email">
+                        Admin Email
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="admin@achievex.com"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="password">
+                        Password
+                    </label>
+
+                    <input
+                        type="password"
+                        id="password"
+                        placeholder="Enter admin password"
+                        required
+                    >
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="auth-button"
+                >
+                    Login as Admin
+                </button>
+
+
+                <p
+                    id="message"
+                    class="message"
+                ></p>
+
+            </form>
+
+
+            <div class="auth-footer">
+
+                <p>
+                    Student?
+                    <a href="/login.html">
+                        Login here
+                    </a>
+                </p>
+
+                <p>
+                    <a href="/">
+                        ← Back to Home
+                    </a>
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="js/admin.js"></script>
+
+</body>
+
+</html>

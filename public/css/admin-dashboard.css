@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Admin Dashboard | AchieveX</title>
+
+    <!-- ADMIN ONLY CSS -->
+    <link
+        rel="stylesheet"
+        href="css/admin-dashboard.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         DASHBOARD CONTAINER
+         ===================================================== -->
+
+    <div class="dashboard-container">
+
+
+        <!-- =================================================
+             SIDEBAR
+             ================================================= -->
+
+        <aside class="sidebar">
+
+            <div class="sidebar-logo">
+
+                <div class="logo-icon">
+                    🏆
+                </div>
+
+                <h1>AchieveX</h1>
+
+                <p>Admin Panel</p>
+
+            </div>
+
+
+            <nav class="sidebar-nav">
+
+                <a
+                    href="#"
+                    class="active"
+                >
+                    📊 Dashboard
+                </a>
+
+                <a href="#achievements">
+                    🏆 Achievements
+                </a>
+
+                <a href="#students">
+                    👥 Students
+                </a>
+
+            </nav>
+
+
+            <button
+                id="adminLogoutBtn"
+                class="logout-btn"
+            >
+                🚪 Logout
+            </button>
+
+        </aside>
+
+
+
+        <!-- =================================================
+             MAIN CONTENT
+             ================================================= -->
+
+        <main class="main-content">
+
+
+            <!-- HEADER -->
+
+            <header class="dashboard-header">
+
+                <div>
+
+                    <h1>
+                        Admin Dashboard
+                    </h1>
+
+                    <p>
+                        Manage student achievements
+                    </p>
+
+                </div>
+
+
+                <div class="admin-info">
+
+                    <div class="admin-avatar">
+                        👤
+                    </div>
+
+                    <div>
+
+                        <h3 id="adminName">
+                            Admin
+                        </h3>
+
+                        <p id="adminEmail">
+                            admin@achievex.com
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </header>
+
+
+
+            <!-- =================================================
+                 STATISTICS
+                 ================================================= -->
+
+            <section class="stats-grid">
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon">
+                        📋
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Total Achievements
+                        </h3>
+
+                        <h2 id="totalAchievements">
+                            0
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon">
+                        ⏳
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Pending
+                        </h3>
+
+                        <h2 id="pendingAchievements">
+                            0
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon">
+                        ✅
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Approved
+                        </h3>
+
+                        <h2 id="approvedAchievements">
+                            0
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon">
+                        ❌
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Rejected
+                        </h3>
+
+                        <h2 id="rejectedAchievements">
+                            0
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+            </section>
+
+
+
+            <!-- =================================================
+                 ACHIEVEMENTS
+                 ================================================= -->
+
+            <section
+                class="dashboard-section"
+                id="achievements"
+            >
+
+                <div class="section-header">
+
+                    <div>
+
+                        <h2>
+                            Student Achievements
+                        </h2>
+
+                        <p>
+                            Review and manage submitted achievements.
+                        </p>
+
+                    </div>
+
+
+                    <select
+                        id="statusFilter"
+                    >
+
+                        <option value="all">
+                            All Achievements
+                        </option>
+
+                        <option value="pending">
+                            Pending
+                        </option>
+
+                        <option value="approved">
+                            Approved
+                        </option>
+
+                        <option value="rejected">
+                            Rejected
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+
+                <!-- Achievement cards inserted by JavaScript -->
+
+                <div
+                    id="achievementList"
+                    class="achievement-list"
+                >
+
+                    <div class="empty-message">
+                        Loading achievements...
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 STUDENTS
+                 ================================================= -->
+
+            <section
+                class="dashboard-section"
+                id="students"
+            >
+
+                <div class="section-header">
+
+                    <div>
+
+                        <h2>
+                            Students
+                        </h2>
+
+                        <p>
+                            Student management will be added here.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="student-placeholder">
+
+                    <div class="placeholder-icon">
+                        👥
+                    </div>
+
+                    <h3>
+                        Student Management
+                    </h3>
+
+                    <p>
+                        Student management features will be available soon.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+        </main>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         ADMIN DASHBOARD JAVASCRIPT
+         ===================================================== -->
+
+    <script src="js/admin-dashboard.js"></script>
+
+
+</body>
+
+</html>
