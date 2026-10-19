@@ -10,7 +10,7 @@ const fs = require("fs");
 
 const router = express.Router();
 
-const Achievement = require("../models/achievement");
+const Achievement = require('../models/Achievement');
 const User = require("../models/User");
 
 const {
